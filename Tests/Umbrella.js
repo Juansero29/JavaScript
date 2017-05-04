@@ -2,17 +2,17 @@ var umbrella = {
     color: "pink",
     isOpen: false,
     open: function () {
-        if (isOpen) {
+        if (this.isOpen) {
             console.log("The umbrella is already open!");
         } else {
-            isOpen = true;
+            this.isOpen = true;
             console.log("The umbrella has been opened!");
         }
     },
 
     close: function () {
-        if (isOpen) {
-            isOpen = false;
+        if (this.isOpen) {
+            this.isOpen = false;
             console.log("The umbrella has been closed!");
         } else {
             console.log("The umbrella is already closed!");
